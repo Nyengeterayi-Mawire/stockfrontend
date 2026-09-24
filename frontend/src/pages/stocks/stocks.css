@@ -1,0 +1,50 @@
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80px 300px 1fr 300px;
+    grid-template-rows: 50px 50px calc(100vh - 100px)  ;
+    grid-template-areas: 
+        'sidebar topnav topnav topnav' 
+        'sidebar filter filter filter' 
+        'sidebar stock-list stock-candle-display stock-right-nav' ;
+} 
+
+.sidebar{
+    grid-area: sidebar;
+    /* border: 1px solid red; */
+    background-color: #545452;
+    display: flex;
+    flex-direction: column;
+} 
+
+.topnav{
+    grid-area: topnav;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: end; 
+    border-bottom: 1px solid #545452;
+}
+.filter{
+    grid-area: filter;
+    /* border: 1px solid yellow; */
+}
+
+.stock-list{
+    grid-area: stock-list;
+    /* border: 1px solid pink; */
+    border-right: 1px solid #545452; 
+    padding: 0px 8px; 
+    gap : 5px;
+}
+
+.stock-candle{
+    grid-area: stock-candle-display;
+    /* border: 1px solid black; */
+}
+.stock-nav{
+    grid-area: stock-right-nav;
+    /* border: 1px solid purple;  */
+    /* height:100vh */
+    border-left: 1px solid #545452;
+}

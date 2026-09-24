@@ -1,0 +1,25 @@
+.stock-container{
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    display: flex;
+    /* border: 1px solid red;  */
+    justify-content: space-between; 
+    border-radius: 8px;
+}   
+
+.link :visited .stock-container{
+    background-color:#545452;
+}
+
+.stock-container p{
+    margin: 0;
+} 
+
+.stock-container :nth-child(1){
+    font-weight: 600;
+}
+
+.stock-container:hover,.stock-container:hover>*{
+    background-color:#545452;
+} 
+
